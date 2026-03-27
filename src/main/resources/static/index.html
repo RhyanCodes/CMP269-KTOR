@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMP 269 - Ktor Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>Welcome to CMP 269</h1>
+        <p>This is a static HTML page served by Ktor at Lehman College.</p>
+        <h2>Available Routes:</h2>
+        <ul>
+            <li><a href="/">/</a> - Server status</li>
+            <li><a href="/greet/YourName">/greet/{name}</a> - Greeting</li>
+            <li><a href="/grade/123">/grade/{studentId}</a> - Grade lookup</li>
+            <li><a href="/api/stock/AAPL">/api/stock/{symbol}</a> - Stock API (JSON)</li>
+        </ul>
+    </div>
+</body>
+</html>
