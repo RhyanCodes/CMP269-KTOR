@@ -25,6 +25,11 @@ dependencies {
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
     implementation("io.ktor:ktor-server-resources:$ktorVersion")
     implementation("ch.qos.logback:logback-classic:1.5.15")
+
+    // ZXing Core: The math behind the QR code
+    implementation("com.google.zxing:core:3.5.3")
+    // ZXing JavaSE: Utility to convert BitMatrix to images
+    implementation("com.google.zxing:javase:3.5.3")
 }
 
 application {
